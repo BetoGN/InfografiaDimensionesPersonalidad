@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimensiones de la Personalidad del Líder - Modelo OCEAN</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1>Dimensiones de la Personalidad del Líder</h1>
+            <h2>Modelo OCEAN (Cinco Grandes)</h2>
+            <div class="header-info">
+                <p><strong>Profesora:</strong> Rosa Alba Hernandez Garcia</p>
+                <p><strong>Grupo:</strong> 8CV2</p>
+                <p><strong>Fecha:</strong> 30 de octubre, 2025</p>
+            </div>
+            <div class="authors">
+                <h3>Alumnos:</h3>
+                <div class="authors-grid">
+                    <span>Amaro Romero Roberto Fernando</span>
+                    <span>Cruz Villalba Edwin Bernardo</span>
+                    <span>Domínguez López Cassandra</span>
+                    <span>Rugerio Arceo Juan Alberto</span>
+                    <span>Esparza Jacobo Diego</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="#introduccion">Introducción</a></li>
+                <li><a href="#ocean-model">Modelo OCEAN</a></li>
+                <li><a href="#dimensiones">Dimensiones</a></li>
+                <li><a href="#evidencia">Evidencia</a></li>
+                <li><a href="#conclusiones">Conclusiones</a></li>
+                <li><a href="#referencias">Referencias</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="introduccion" class="intro-section">
+            <div class="container">
+                <h2>Introducción</h2>
+                <div class="intro-content">
+                    <p>El estudio de la personalidad y sus implicaciones para el liderazgo constituye un ámbito central en la psicología organizacional y en la formación del liderazgo personal. La personalidad se entiende como la configuración relativamente estable de rasgos que condicionan la manera en que los individuos piensan, sienten y actúan en contextos diversos.</p>
+                    
+                    <div class="highlight-box">
+                        <h3>Modelo de los Cinco Grandes (OCEAN)</h3>
+                        <p>A partir de la investigación lexicográfica y factorial emergió la estructura conocida como "Cinco Grandes" o modelo OCEAN, cuyo uso ha permitido sintetizar la variabilidad individual en dimensiones amplias y comparables entre poblaciones.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ocean-model" class="ocean-overview">
+            <div class="container">
+                <h2>El Modelo OCEAN</h2>
+                <div id="ocean-visualization" class="visualization-container">
+                    <!-- D3.js visualization will be inserted here -->
+                </div>
+                <div class="ocean-legend">
+                    <div class="legend-item">
+                        <span class="color-indicator openness"></span>
+                        <strong>O</strong>penness - Apertura a la Experiencia
+                    </div>
+                    <div class="legend-item">
+                        <span class="color-indicator conscientiousness"></span>
+                        <strong>C</strong>onscientiousness - Escrupulosidad
+                    </div>
+                    <div class="legend-item">
+                        <span class="color-indicator extraversion"></span>
+                        <strong>E</strong>xtraversion - Extraversión
+                    </div>
+                    <div class="legend-item">
+                        <span class="color-indicator agreeableness"></span>
+                        <strong>A</strong>greeableness - Afabilidad/Empatía
+                    </div>
+                    <div class="legend-item">
+                        <span class="color-indicator neuroticism"></span>
+                        <strong>N</strong>euroticism - Neuroticismo (vs. Estabilidad Emocional)
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dimensiones" class="dimensions-section">
+            <div class="container">
+                <h2>Las Cinco Dimensiones</h2>
+                
+                <div class="dimension-card" data-dimension="agreeableness">
+                    <div class="dimension-header">
+                        <div class="dimension-icon agreeableness-bg">A</div>
+                        <h3>Afabilidad (Agreeableness) - Empatía</h3>
+                    </div>
+                    <div class="dimension-content">
+                        <div class="dimension-description">
+                            <p>Recoge rasgos como la cooperación, la confianza, la cordialidad y la disposición a la conciliación. En términos de liderazgo personal, la empatía se articula como la capacidad del dirigente para comprender las perspectivas ajenas.</p>
+                        </div>
+                        <div class="dimension-leadership">
+                            <h4>Importancia en el Liderazgo:</h4>
+                            <ul>
+                                <li>Creación de climas organizacionales saludables</li>
+                                <li>Gestión efectiva de conflictos</li>
+                                <li>Reducción de la rotación de personal</li>
+                                <li>Facilitación de la resolución informal de disputas</li>
+                                <li>Contribución a la cohesión del grupo</li>
+                            </ul>
+                        </div>
+                        <div class="dimension-example">
+                            <h4>Ejemplo Práctico:</h4>
+                            <p>Un responsable de proyecto que reconoce la sobrecarga de miembros clave y redistribuye tareas manteniendo la comunicación transparente sobre prioridades y plazos, reduciendo el riesgo de burnout y preservando la efectividad operativa.</p>
+                        </div>
+                        <div class="dimension-viz" id="agreeableness-viz"></div>
+                    </div>
+                </div>
+
+                <div class="dimension-card" data-dimension="neuroticism">
+                    <div class="dimension-header">
+                        <div class="dimension-icon neuroticism-bg">N</div>
+                        <h3>Estabilidad Emocional (vs. Neuroticismo) - Ajuste</h3>
+                    </div>
+                    <div class="dimension-content">
+                        <div class="dimension-description">
+                            <p>Su importancia en el liderazgo personal estriba en la capacidad del individuo para regular la reactividad frente a la presión, mantener la claridad cognitiva en situaciones adversas y modelar una conducta que funcione como ancla para el equipo.</p>
+                        </div>
+                        <div class="dimension-leadership">
+                            <h4>Importancia en el Liderazgo:</h4>
+                            <ul>
+                                <li>Regulación de la reactividad ante la presión</li>
+                                <li>Mantenimiento de claridad cognitiva en crisis</li>
+                                <li>Proporciona señales de calma y seguridad</li>
+                                <li>Disminuye la ansiedad colectiva en momentos críticos</li>
+                                <li>Preserva la credibilidad directiva</li>
+                            </ul>
+                        </div>
+                        <div class="dimension-example">
+                            <h4>Ejemplo Práctico:</h4>
+                            <p>Un director de operaciones que, ante una caída de servicio, presenta un plan de contingencia claro y comunica pasos operativos sin recurrir al reproche público, contribuyendo a una resolución eficiente y preservando el clima interno.</p>
+                        </div>
+                        <div class="dimension-viz" id="neuroticism-viz"></div>
+                    </div>
+                </div>
+
+                <div class="dimension-card" data-dimension="extraversion">
+                    <div class="dimension-header">
+                        <div class="dimension-icon extraversion-bg">E</div>
+                        <h3>Extraversión - Emocionalidad</h3>
+                    </div>
+                    <div class="dimension-content">
+                        <div class="dimension-description">
+                            <p>Esta dimensión reúne la energía social, la asertividad y la tendencia a la interacción frecuente con otros. En investigación sobre liderazgo, la extraversión se ha encontrado consistentemente asociada con la emergencia y el desempeño en puestos que requieren presencia pública.</p>
+                        </div>
+                        <div class="dimension-leadership">
+                            <h4>Importancia en el Liderazgo:</h4>
+                            <ul>
+                                <li>Facilita la emergencia en roles de liderazgo</li>
+                                <li>Mejora el desempeño en puestos con visibilidad pública</li>
+                                <li>Potencia la persuasión y movilización de seguidores</li>
+                                <li>Correlación alta con liderazgo efectivo</li>
+                                <li>Especialmente efectiva en roles de comunicación</li>
+                            </ul>
+                        </div>
+                        <div class="dimension-example">
+                            <h4>Ejemplo Práctico:</h4>
+                            <p>Un gerente comercial extrovertido que combina su capacidad de motivación con el reconocimiento auténtico del aporte individual, potenciando tanto las ventas como el clima laboral.</p>
+                        </div>
+                        <div class="dimension-viz" id="extraversion-viz"></div>
+                    </div>
+                </div>
+
+                <div class="dimension-card" data-dimension="conscientiousness">
+                    <div class="dimension-header">
+                        <div class="dimension-icon conscientiousness-bg">C</div>
+                        <h3>Escrupulosidad (Conscientiousness)</h3>
+                    </div>
+                    <div class="dimension-content">
+                        <div class="dimension-description">
+                            <p>Se identifica con la disciplina, la organización, la orientación a objetivos y la persistencia. Desde la investigación sobre desempeño laboral, la escrupulosidad es la dimensión que más consistentemente predice rendimientos generales.</p>
+                        </div>
+                        <div class="dimension-leadership">
+                            <h4>Importancia en el Liderazgo:</h4>
+                            <ul>
+                                <li>Establecimiento de metas operativas claras</li>
+                                <li>Definición de indicadores de progreso</li>
+                                <li>Asignación coherente de responsabilidades</li>
+                                <li>Supervisión sistemática y efectiva</li>
+                                <li>Genera predictibilidad y confianza</li>
+                            </ul>
+                        </div>
+                        <div class="dimension-example">
+                            <h4>Ejemplo Práctico:</h4>
+                            <p>Un jefe de proyecto que mantiene cronogramas estrictos, revisiones periódicas de avance y criterios de aceptación claros; su conducta facilita la ejecución y minimiza desviaciones no deseadas.</p>
+                        </div>
+                        <div class="dimension-viz" id="conscientiousness-viz"></div>
+                    </div>
+                </div>
+
+                <div class="dimension-card" data-dimension="openness">
+                    <div class="dimension-header">
+                        <div class="dimension-icon openness-bg">O</div>
+                        <h3>Apertura a la Experiencia (Openness)</h3>
+                    </div>
+                    <div class="dimension-content">
+                        <div class="dimension-description">
+                            <p>Engloba la curiosidad, la creatividad y la disposición hacia lo nuevo. Su papel en el liderazgo personal se aprecia en contextos en los que la innovación y la adaptación estratégica son requisitos para la competitividad organizacional.</p>
+                        </div>
+                        <div class="dimension-leadership">
+                            <h4>Importancia en el Liderazgo:</h4>
+                            <ul>
+                                <li>Fomenta la experimentación y innovación</li>
+                                <li>Promueve el aprendizaje continuo</li>
+                                <li>Favorece la diversidad cognitiva en equipos</li>
+                                <li>Facilita soluciones no convencionales</li>
+                                <li>Permite anticipar tendencias y cambios</li>
+                            </ul>
+                        </div>
+                        <div class="dimension-example">
+                            <h4>Ejemplo Práctico:</h4>
+                            <p>Un director de innovación que implementa laboratorios de prototipado y acepta fallos inteligentes como insumos de aprendizaje, creando una cultura organizacional proclive al ensayo y corrección.</p>
+                        </div>
+                        <div class="dimension-viz" id="openness-viz"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="evidencia" class="evidence-section">
+            <div class="container">
+                <h2>Evidencia Empírica</h2>
+                <div class="evidence-content">
+                    <div class="evidence-box">
+                        <h3>Correlaciones con el Liderazgo</h3>
+                        <p>Metaanálisis y revisiones integradoras han encontrado que la extraversión, la escrupulosidad y la apertura mantienen asociaciones positivas y relativamente estables con indicadores de liderazgo emergente y eficacia.</p>
+                        <div id="correlation-chart" class="chart-container"></div>
+                    </div>
+                    
+                    <div class="evidence-box">
+                        <h3>Determinantes de la Personalidad</h3>
+                        <p>La investigación en genética del comportamiento indica que los rasgos del Big Five presentan componentes hereditarios significativos, con estimaciones de heredabilidad en el rango aproximado de 40 a 60 por ciento.</p>
+                        <div id="heritability-chart" class="chart-container"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="conclusiones" class="conclusions-section">
+            <div class="container">
+                <h2>Conclusiones</h2>
+                <div class="conclusions-content">
+                    <div class="conclusion-item">
+                        <h3>Marco Teórico-Empírico</h3>
+                        <p>La comprensión de las cinco dimensiones de la personalidad mediante el modelo OCEAN proporciona un marco teórico-empírico robusto para analizar el liderazgo personal.</p>
+                    </div>
+                    
+                    <div class="conclusion-item">
+                        <h3>Dimensiones Críticas</h3>
+                        <p>La extraversión, la escrupulosidad y la apertura facilitan la emergencia y el desempeño en roles de liderazgo, mientras que la afabilidad y la estabilidad emocional resultan críticas para sostener relaciones productivas.</p>
+                    </div>
+                    
+                    <div class="conclusion-item">
+                        <h3>Aplicación Práctica</h3>
+                        <p>La intervención educativa en liderazgo debe combinar diagnóstico de rasgos y desarrollo de competencias prácticas, considerando que existe margen para el aprendizaje y la transformación conductual.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="referencias" class="references-section">
+            <div class="container">
+                <h2>Referencias</h2>
+                <div class="references-list">
+                    <div class="reference-item">
+                        <span class="ref-number">[1]</span>
+                        <div class="ref-content">
+                            <p>R. N. Lussier y C. F. Achua, <em>Liderazgo. Teoría, aplicación y desarrollo de habilidades</em>, Charlottesville, Virginia: CENGAGE Learning, 2010.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="reference-item">
+                        <span class="ref-number">[2]</span>
+                        <div class="ref-content">
+                            <p>L. R. Goldberg, «The structure of phenotypic personality traits,» <em>American Psychologist</em>, vol. 48, nº 1, pp. 26-34, 1993.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="reference-item">
+                        <span class="ref-number">[3]</span>
+                        <div class="ref-content">
+                            <p>T. A. Judge, J. E. Bono, R. Ilies y M. W. Gerhardt, «Personality and Leadership: A qualitative and quantitative review,» <em>Journal of Applied Psychology</em>, vol. 87, nº 4, pp. 765-780, 2002.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="reference-item">
+                        <span class="ref-number">[4]</span>
+                        <div class="ref-content">
+                            <p>B. R. Murray y M. K. Mount, «The big five personality dimensions and job performance: A meta-analysis,» <em>Personnel Psychology</em>, vol. 44, nº 1, pp. 1-26, 1991.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="reference-item">
+                        <span class="ref-number">[5]</span>
+                        <div class="ref-content">
+                            <p>R. A. Power y M. Pluess, «Heritability estimates of the Big Five personality traits based on common genetic variants,» <em>Translational psychiatry</em>, vol. 5, nº 1, pp. 1-4, 2015.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 - Grupo 8CV2 - Rosa Alba Hernandez Garcia</p>
+            <p>Infografía Interactiva: Dimensiones de la Personalidad del Líder</p>
+        </div>
+    </footer>
+
+    <script src="node_modules/d3/dist/d3.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

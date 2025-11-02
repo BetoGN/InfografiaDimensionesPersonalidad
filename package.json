@@ -1,0 +1,26 @@
+{
+  "name": "infografia-dimensiones-personalidad",
+  "version": "1.0.0",
+  "description": "Interactive infographic about leadership personality dimensions based on the Big Five model",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server",
+    "dev": "live-server --port=3000"
+  },
+  "keywords": [
+    "d3js",
+    "infographic",
+    "leadership",
+    "personality",
+    "big-five",
+    "ocean"
+  ],
+  "author": "Grupo 8CV2",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "dependencies": {
+    "d3": "^7.8.5"
+  }
+}
